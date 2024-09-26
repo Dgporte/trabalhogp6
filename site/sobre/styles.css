@@ -15,10 +15,10 @@ body {
     height: 6rem;
 }
 
-img {
-    height: 100%;
-    width: 200px;
+.top-pag img {
+    height: 90px;
     padding-top: 10px;
+    filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
 }
 
 .main-pag {
@@ -54,4 +54,11 @@ img {
 
 .footer-pag {
     height: 6rem;
+    background-color: #D9D9D9;
+    ;
+}
+
+.footer-pag img {
+    height: 90px;
+    padding-top: 10px;
 }
