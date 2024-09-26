@@ -17,10 +17,11 @@ body {
 
 .main-pag {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     margin: 3rem;
     gap: 3rem;
-    height: 50rem;
+    height: 42rem;
 }
 
 .top-pag img {
@@ -31,14 +32,39 @@ body {
 
 .contato{
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 33vh;
-    justify-content: space-between;
+    flex-direction: column;    
+    width: 35%;
+    height: 60vh;
+    justify-content: center;
     align-content: center;
     align-items: center;
-    background-color: #D9D9D9;
-    text-decoration: none;
+    background-color: #999999;
+    text-decoration: none;    
+    filter: drop-shadow( 3px 3px 10px rgb(146, 13, 13));
+}
+
+.contato h1{
+    font-size: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contato form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;    
+}
+
+.contato form textarea{
+    width: 20rem;
+    height: 5rem;
+}
+
+.contato form input{
+    width: 15rem;
+    height: 1.5rem;
 }
 
 .footer-pag {
