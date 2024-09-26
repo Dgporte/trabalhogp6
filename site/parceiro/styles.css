@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+.top-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+img {
+    height: 100%;
+    width: 200px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.parceiros {
+    background-color: #D9D9D9;
+    height: 234px;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.footer-pag {
+    height: 6rem;
+    background-color: #D9D9D9;
+    margin-top: 2rem;
+}
+
+.footer-pag img {
+    height: 90px;
+    padding-top: 10px;
+    padding-left: 25px;
+}
