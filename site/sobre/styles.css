@@ -6,16 +6,52 @@
 
 body {
     background-color: black;
-    height: 100%;
 }
 
 .top-pag {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 6rem;
 }
 
 img {
     height: 100%;
     width: 200px;
+    padding-top: 10px;
+}
+
+.main-pag {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+    gap: 3rem;
+    height: 50rem;
+}
+
+.main-pag-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+}
+
+.main-pag-left-top {
+    background-color: brown;
+    height: 20%;
+}
+
+.main-pag-left-bottom {
+    background-color: pink;
+    height: 80%;
+
+}
+
+.main-pag-right {
+    background-color: aquamarine;
+    width: 20%;
+}
+
+.footer-pag {
+    height: 6rem;
 }
