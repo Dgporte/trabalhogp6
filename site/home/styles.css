@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+}
+
+header{
+    margin: 0.5rem;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1rem 2rem; 
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    margin: 1rem;
+    height: 4rem;
+    width: auto; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    color: white; 
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: lightgray;
+}
+
+.main-pag {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    height: 200rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-pag-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+}
+
+.main-pag-left-top {
+    background-color: brown;
+    height: 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-pag-left-mid {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 15%;
+}
+
+.main-pag-left-bot{
+    background-color: white;
+    width: 40%;
+    height: 20%;
+}
+
+.main-pag-mid{
+    display: grid;
+    grid-row: auto;
+    height: 10vh;
+}
+.main-pag-mid-top{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 45%;
+}
+
+.main-pag-mid-bot{
+    background-color: aliceblue;
+}
+
+.main-pag-right{
+    background-color: antiquewhite;    
+}
+
+.main-pag-right-top{
+    background-color: aliceblue;
+}
