@@ -31,9 +31,9 @@ header{
 }
 
 .logo img {
-    margin: 1rem;
-    height: 4rem;
-    width: auto; 
+    height: 90px;
+    padding-top: 10px;
+    filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
 }
 
 .navbar {
@@ -53,70 +53,118 @@ header{
 }
 
 .main-pag {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    width: 100%;
-    height: 200rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    gap: 3rem;
+    padding: 1rem;
+    margin: 2rem;
+    height: 230vh;
 }
 
 .main-pag-left {
     display: flex;
     flex-direction: column;
+    background-color: green;
+    height: 100vh;
+    width: 160vh;
+    margin: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
     gap: 2rem;
-    width: 80%;
 }
 
 .main-pag-left-top {
     background-color: brown;
-    height: 5%;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-pag-left-mid {
-    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 15%;
+    margin: 2rem;
+    margin-bottom: 1rem;
+    height: 20vh;
+    width: 120vh;
 }
 
-.main-pag-left-bot{
-    background-color: white;
-    width: 40%;
-    height: 20%;
-}
-
-.main-pag-mid{
-    display: grid;
-    grid-row: auto;
-    height: 10vh;
-}
-.main-pag-mid-top{
+.main-pag-left-left {
     background-color: aliceblue;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 45%;
+    width: 55vh;
+    height: 50vh;
+    margin: 2rem;
+    margin-right: 1rem;
 }
 
-.main-pag-mid-bot{
-    background-color: aliceblue;
+.main-pag-container-left-bot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    gap: 1rem; 
+    margin: 1rem;
+}
+
+.main-pag-left-right{
+    background-color: rgb(184, 9, 155);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 55vh;
+    height: 50vh;
+    margin: 2rem;
+    margin-left: 1rem;
 }
 
 .main-pag-right{
-    background-color: antiquewhite;    
+    background-color: rgb(153, 91, 11); 
+    height: 100vh;
+    width: 40vh;
+    margin: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container-main-pag-leftside-rightside{
+    display: flex;
+    flex-direction: row;
 }
 
 .main-pag-right-top{
-    background-color: aliceblue;
+   background-color: black;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    width: 40vh;
+    height: 100vh;
+    display: flex;
+    border-radius: 5px;
+}
+.main-pag-bot{
+    background-color: rgb(10, 57, 99);
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    margin-top: 1rem;
+    height: 100vh;
+}
+
+.main-pag-bot-left{
+    background-color: brown;
+
+}
+
+footer{
+    padding: 1rem 0 2rem 2rem;
+    border-top: 2px;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    margin-top: 8rem;
+    height: 7.5rem;
+    background-color: black;
+}
+
+.footer-pag img {
+    height: 90px;
+    padding-top: 10px;
 }
