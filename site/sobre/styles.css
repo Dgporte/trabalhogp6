@@ -6,6 +6,7 @@
 
 body {
     background-color: black;
+    height: 100%;
 }
 
 .top-pag {
@@ -26,7 +27,7 @@ body {
     justify-content: space-between;
     margin: 3rem;
     gap: 3rem;
-    height: 50rem;
+    height: 100%;
 }
 
 .main-pag-left{
@@ -36,26 +37,113 @@ body {
     width: 80%;
 }
 
+.noticias {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    border-radius: 5px;
+}
+
 .main-pag-left-top {
-    background-color: brown;
-    height: 20%;
+    display: flex;
+    white-space: nowrap;
+    animation: rolar 12s linear infinite;
+    gap: 3.5rem;
+    border: 2px solid gold;
+    height: 100%;
+}
+
+.main-pag-left-top-divs {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid blue;
+    height: 9.3rem;
+}
+
+.main-pag-left-top img {
+    width: 200px;
+    height: 150px;
+    margin-right: 10px;
+}
+
+@keyframes rolar {
+  0% {
+    transform: translateX(0.58%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.main-pag-left-top p{
+    color: white;
+    border: 1px solid green;
+    width: 20rem;
+    white-space: normal;
+    /*
+    word-wrap: break-word;  Garante a quebra de palavras longas 
+    overflow-wrap: break-word; Para garantir a quebra 
+      Permite a quebra de linha normal */
+}
+
+.imagens img {
+    height: 20px;
+    width: 10px;
 }
 
 .main-pag-left-bottom {
-    background-color: pink;
-    height: 80%;
+    display: grid;
+    background-color: black;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    height: fit-content;
+    border-radius: 5px;
+    gap: 2rem;
+}
 
+.main-pag-left-bottom h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: red;
 }
 
 .main-pag-right {
-    background-color: aquamarine;
+    background-color: black;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
     width: 20%;
+    border-radius: 5px;
+}
+
+.sobre-dev {
+    display: flex;
+    gap: 2rem;
+    border: 2px solid black;
+    margin: 1rem;
+    align-items: center;
+}
+
+.sobre-dev img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sobre-dev p {
+    font-size: 1.5rem;
+    color: white;
 }
 
 .footer-pag {
-    height: 6rem;
-    background-color: #D9D9D9;
-    ;
+    padding: 1rem 0 2rem 2rem;
+    border-top: 2px;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    margin-top: 8rem;
+    height: 7.5rem;
+    background-color: black;
 }
 
 .footer-pag img {
