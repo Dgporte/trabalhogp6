@@ -59,7 +59,7 @@ header{
     gap: 3rem;
     padding: 1rem;
     margin: 2rem;
-    height: 230vh;
+    height: 100%;
 }
 
 .main-pag-left {
@@ -100,15 +100,18 @@ header{
 }
 
 .main-pag-container-left-bot{
+    background-color: rgb(219, 129, 12);
     display: flex;
     flex-direction: row;
+    width: 131vh;
     justify-content: space-between; 
+    align-items: center;
     gap: 1rem; 
-    margin: 1rem;
+    margin: 3rem;
 }
 
 .main-pag-left-right{
-    background-color: rgb(184, 9, 155);
+    background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -161,10 +164,12 @@ header{
 }
 
 .container-main-pag-bot-right{
+    background-color: blueviolet;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 1.5rem;
+    height: 88vh;
     margin: 3rem;
     margin-bottom: 2.5rem;
     width: 100vh;
