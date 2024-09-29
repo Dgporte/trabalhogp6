@@ -39,9 +39,14 @@ body {
 
 .main-pag-left-top {
     background-color: black;
-    color: white;
     box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
-    height: 30%;
+    height: 40%;
+    border-radius: 5px;
+}
+
+.main-pag-left-top img {
+    height: 100%;
+    width: 100%;
     border-radius: 5px;
 }
 
@@ -70,10 +75,11 @@ body {
 .footer-pag {
     padding: 1rem 0 2rem 2rem;
     border-top: 2px;
-    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    box-shadow: hsla(0, 100%, 50%, 0.9) 0px 0px 20px;
     margin-top: 8rem;
     height: 7.5rem;
     background-color: black;
+
 }
 
 .footer-pag img {
@@ -81,3 +87,4 @@ body {
     height: 90px;
     padding-top: 10px;
 }
+
