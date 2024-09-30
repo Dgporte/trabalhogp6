@@ -9,19 +9,28 @@
 body {
     background-color: black;
     height: 100%;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 5px;
+    font-style: normal;
 }
 
 .top-pag {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 6rem;
+    overflow: hidden;
 }
 
 .top-pag img {
     height: 90px;
     padding-top: 10px;
     filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
+    transition: transform 0.3s ease;
+}
+
+.top-pag img:hover {
+  transform: scale(1.1); /* Aumenta a imagem para 110% do tamanho original */
 }
 
 .main-pag {
@@ -98,8 +107,8 @@ body {
 }
 
 .main-pag-right-two p {
-    font-size: 16.3px;
-  
+    font-size: 14.6px;
+    margin-bottom: 10px;
 }
 
 .footer-pag {
