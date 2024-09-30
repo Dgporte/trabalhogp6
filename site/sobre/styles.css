@@ -51,28 +51,28 @@ body {
 .main-pag-left-top {
     display: flex;
     white-space: nowrap;
-    animation: rolar 12s linear infinite;
-    gap: 3.5rem;
-    border: 2px solid gold;
+    animation: rolar 60s linear infinite;
+    gap: 1.3rem;
+    /* border: 2px solid gold; */
     height: 100%;
 }
 
 .main-pag-left-top-divs {
     display: flex;
-    align-items: flex-start;
-    border: 1px solid blue;
-    height: 9.3rem;
+    align-items: center;
+    /* border: 1px solid blue; */
+    height: 4.3rem;
 }
 
 .main-pag-left-top img {
-    width: 200px;
-    height: 150px;
+    width: 110px;
+    height: 67px;
     margin-right: 10px;
 }
 
 @keyframes rolar {
   0% {
-    transform: translateX(0.58%);
+    transform: translateX(0.14%);
   }
   100% {
     transform: translateX(-50%);
@@ -81,13 +81,14 @@ body {
 
 .main-pag-left-top p{
     color: white;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 20rem;
     white-space: normal;
+
     /*
-    word-wrap: break-word;  Garante a quebra de palavras longas 
+    word-wrap: break-word; quebra de palavras longas 
     overflow-wrap: break-word; Para garantir a quebra 
-      Permite a quebra de linha normal */
+     */
 }
 
 .imagens img {
@@ -115,6 +116,20 @@ body {
     box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
     width: 20%;
     border-radius: 5px;
+}
+
+.main-pag-right h3 {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px;
+}
+
+.main-pag-right p {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px 0;
 }
 
 .sobre-dev {
@@ -149,4 +164,40 @@ body {
 .footer-pag img {
     height: 90px;
     padding-top: 10px;
+}
+
+.main-pag-foot-animation{
+    margin: 0;
+    height: 12vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid blue; */
+}
+
+.image-animation{
+    /* border: 1px solid green; */
+    height: 130px;
+    width: 130px;
+    position: relative;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+        transform: scaleX(1);
+    }
+    50% {
+        left: 70%;
+        transform: scaleX(1);
+    }
+    51%{
+        transform: scaleX(-1);
+    }
+
+    100% {
+        left: 0;
+        transform: scaleX(-1);
+    }
 }
