@@ -94,7 +94,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 80%;
+    width: 74%;
 }
 
 .noticias {
@@ -175,11 +175,10 @@ body {
 .main-pag-right {
     background-color: rgba(0, 0, 0, 0.911);
     box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
-    width: 20%;
+    width: 26%;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .main-pag-right h3 {
@@ -187,7 +186,7 @@ body {
     font-size: 30px;
     display: flex;
     justify-content: center;
-    margin: 10px 0 10px;
+    margin: 10px 0 40px;
 }
 
 .main-pag-right p {
@@ -212,6 +211,7 @@ body {
 }
 
 .sobre-dev p {
+    width: 80%;
     font-size: 1.5rem;
     color: white;
 }
@@ -239,6 +239,7 @@ body {
     margin: 0;
     height: 10vh;
     width: 100%;
+    top: 198px;
     position: relative;
     overflow: hidden;
     /* border: 1px solid blue; */
@@ -270,5 +271,238 @@ body {
     100% {
         left: 0;
         transform: scaleX(-1);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .top-pag {
+        height: 4rem;
+        /* border: 1px solid green; */
+    }
+
+    .top-pag-logo {
+        height: 55px;
+        margin-left: 20px;
+    }
+
+    .animation{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: 0;
+        width: 35%;
+        position: relative;
+        overflow: hidden;
+        /* border: 1px solid blue; */
+    }
+    
+    .img-ght{
+        height: 55px;
+        width: 55px;
+    }
+    
+    @keyframes slide {
+        0% {
+            left: 0%;
+            transform: scaleX(1);
+        }
+        50% {
+            left: 60%;
+            transform: scaleX(1);
+        }
+        51%{
+            transform: scaleX(-1);
+        }
+    
+        100% {
+            left: 0;
+            transform: scaleX(-1);
+        }
+    }
+
+    .top-pag-center p {
+        color: white;
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
+    .main-pag {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        gap: 2rem;
+    }
+
+    .main-pag-left{
+        width: 100%;
+    }
+
+    .main-pag-left-bottom {
+        display: grid;
+        background-color: rgba(0, 0, 0, 0.911);
+        box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+        height: fit-content;
+        border-radius: 5px;
+        gap: 2rem;
+    }
+    
+    .main-pag-left-bottom h2 {
+        font-size: 1.1rem;
+    }
+
+    .sobre-dev {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre-dev img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sobre-dev p {
+        font-size: 14px;
+        color: white;
+    }
+
+    .main-pag-right {
+        width: 100%;
+    }
+
+    .main-pag-right h3 {
+        font-size: 1.1rem;
+
+    }
+
+    .main-pag-right p {
+        font-size: 14px;
+    }
+    
+    .image-animation{
+        height: 70px;
+        width: 70px;
+    }
+
+    .footer-pag {
+        height: 4rem;
+        padding: 10px 0 0 10px;
+        background-size: 50%;
+    }
+
+    .footer-pag img {
+        height: 40px;
+        padding: 0;
+    }
+
+    .main-pag-foot-animation{
+        top: 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1400px) {
+    .top-pag {
+        height: 5rem;
+    }
+
+    .top-pag-logo {
+        height: 70px;
+        margin-left: 90px;
+    }
+
+    .animation{
+        width: 35%;
+    }
+    
+    .img-ght{
+        height: 80px;
+        width: 80px;
+    }
+    
+    @keyframes slide {
+        0% {
+            left: 0%;
+            transform: scaleX(1);
+        }
+        50% {
+            left: 60%;
+            transform: scaleX(1);
+        }
+        51%{
+            transform: scaleX(-1);
+        }
+    
+        100% {
+            left: 0;
+            transform: scaleX(-1);
+        }
+    }
+
+    .top-pag-center p {
+        color: white;
+        font-size: 20px;
+        margin-right: 25px;
+    }
+
+    .main-pag {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        gap: 2rem;
+    }
+
+    .main-pag-left{
+        width: 100%;
+    }
+
+    .main-pag-left-bottom h2 {
+        font-size: 2rem;
+    }
+
+    .sobre-dev {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre-dev img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .sobre-dev p {
+        font-size: 22px;
+        color: white;
+    }
+
+    .main-pag-right {
+        width: 100%;
+    }
+
+    .main-pag-right h3 {
+        font-size: 2rem;
+    }
+
+    .main-pag-right p {
+        font-size: 22px;
+    }
+    
+    .image-animation{
+        height: 100px;
+        width: 100px;
+    }
+
+    .footer-pag {
+        height: 5rem;
+        padding: 15px 0 0 10px;
+        background-size: 40%;
+    }
+
+    .footer-pag img {
+        height: 50px;
+        padding: 0;
+    }
+
+    .main-pag-foot-animation{
+        top: 0;
     }
 }
