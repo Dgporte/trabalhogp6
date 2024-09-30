@@ -5,38 +5,53 @@
 }
 
 body {
-    background-image: url(/site/assets/backgd.gif);
+    background-image: url(/site/assets/YVPK.gif);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
+    background-size: 100% 15%;
+    background-color: black;
     height: 100%;
 }
 
 .top-pag {
     display: flex;
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items: center;
     height: 6rem;
 }
 
 .top-pag-center {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
 }
 
-.top-pag-center a {
+.top-pag-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    padding-top: 10px;
+    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
+}
+
+.top-pag-right{
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+.top-pag-right a {
     text-decoration: none;
 }
 
-.top-pag-center p {
+.top-pag-right p {
     color: white;
     font-size: 25px;
-    margin-right: 20px;
 }
 
-.animation{
+/* .animation{
     display: flex;
     justify-content: left;
     align-items: center;
@@ -44,10 +59,10 @@ body {
     width: 80%;
     position: relative;
     overflow: hidden;
-    /* border: 1px solid blue; */
-}
+    border: 1px solid blue;
+} */
 
-.img-ght{
+/* .img-ght{
     display: flex;
     align-content: center;
     height: 120px;
@@ -73,14 +88,7 @@ body {
         left: 0;
         transform: scaleX(-1);
     }
-}
-
-.top-pag-logo {
-    display: flex;
-    height: 90px;
-    padding-top: 10px;
-    filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
-}
+} */
 
 .main-pag {
     display: flex;
@@ -170,6 +178,7 @@ body {
     font-size: 2.5rem;
     text-align: center;
     color: red;
+    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
 }
 
 .main-pag-right {
@@ -237,9 +246,9 @@ body {
     display: flex;
     align-items: center;
     margin: 0;
-    height: 10vh;
+    height: 7vh;
     width: 100%;
-    top: 198px;
+    top: 0px;
     position: relative;
     overflow: hidden;
     /* border: 1px solid blue; */
@@ -249,8 +258,8 @@ body {
     display: flex;
     align-content: center;
     /* border: 1px solid green; */
-    height: 120px;
-    width: 120px;
+    height: 82px;
+    width: 82px;
     position: relative;
     animation: slide 20s infinite;
 }
@@ -286,7 +295,12 @@ body {
         margin-left: 20px;
     }
 
-    .animation{
+    .top-pag-right {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    /* .animation{
         display: flex;
         justify-content: left;
         align-items: center;
@@ -294,7 +308,7 @@ body {
         width: 35%;
         position: relative;
         overflow: hidden;
-        /* border: 1px solid blue; */
+        border: 1px solid blue;
     }
     
     .img-ght{
@@ -319,12 +333,11 @@ body {
             left: 0;
             transform: scaleX(-1);
         }
-    }
+    } */
 
-    .top-pag-center p {
+    .top-pag-right p {
         color: white;
         font-size: 16px;
-        margin-right: 10px;
     }
 
     .main-pag {
@@ -380,8 +393,8 @@ body {
     }
     
     .image-animation{
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: 50px;
     }
 
     .footer-pag {
@@ -410,7 +423,12 @@ body {
         margin-left: 90px;
     }
 
-    .animation{
+    .top-pag-right{
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    /* .animation{
         width: 35%;
     }
     
@@ -436,12 +454,11 @@ body {
             left: 0;
             transform: scaleX(-1);
         }
-    }
+    } */
 
-    .top-pag-center p {
+    .top-pag-right p {
         color: white;
-        font-size: 20px;
-        margin-right: 25px;
+        font-size: 22px;
     }
 
     .main-pag {
@@ -487,8 +504,8 @@ body {
     }
     
     .image-animation{
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
     }
 
     .footer-pag {
