@@ -22,3 +22,4 @@ function resetAutoSlide() {
 document.addEventListener('DOMContentLoaded', () => {
     autoSlideInterval = setInterval(autoSlide, 3000);
 });
+

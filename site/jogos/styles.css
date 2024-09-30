@@ -52,39 +52,69 @@ body {
 
 .carousel-container {
     position: relative;
-    max-width: 100%;
+    width: 100%; /* MUDANÇA: Ajustado para 100% para cobrir toda a largura */
+     height: 100%; /* Altura do carrossel */
+    margin: 0 auto;
     overflow: hidden;
-}
-
-.carousel {
+  }
+  
+  .carousel {
     display: flex;
     transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-    width: 100%;
-    flex-shrink: 0;
-}
-
-button {
+    height: 100%;
+  }
+  
+  .carousel-item {
+    min-width: 100%; /* Ocupa toda a largura do carrossel */
+    display: flex; /* Flexbox para centralizar a imagem */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    position: relative;
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    width: 100%; /* Impede que a imagem ultrapasse o contêiner */
+    height: 100%; /* Impede que a imagem ultrapasse a altura */
+    object-fit: cover;
+  }
+  
+  .carousel-text {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  button.prev, button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0.5;
     color: white;
     border: none;
     padding: 10px;
     cursor: pointer;
-}
-
-.prev {
+    font-size: 24px;
+    z-index: 1;
+  }
+  
+  button.prev {
     left: 10px;
-}
-
-.next {
+  }
+  
+  button.next {
     right: 10px;
-}
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
 
 .main-pag-left-bottom {
     background-color: black;
@@ -114,13 +144,16 @@ button {
     box-shadow: hsla(0, 100%, 50%, 0.9) 0px 0px 20px;
     margin-top: 8rem;
     height: 7.5rem;
-    background-color: black;
-
+    background-image: url(../assets/residentvil.gif);
+    background-size: cover; /* Redimensiona para cobrir todo o contêiner */
+    background-position: center -350px; /* Centraliza a imagem no contêiner */
+    background-repeat: no-repeat;
 }
 
-.footer-pag img {
+.logoImg {
     filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
     height: 90px;
     padding-top: 10px;
 }
+
 
