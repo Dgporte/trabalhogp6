@@ -5,22 +5,91 @@
 }
 
 body {
+    /* background-image: url(/site/assets/YVPK.gif); */
+    background-image: url(/site/assets/5362.gif);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 25%;
     background-color: black;
     height: 100%;
 }
 
 .top-pag {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 6rem;
 }
 
-.top-pag img {
+.top-pag-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
+}
+
+.top-pag-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 90px;
     padding-top: 10px;
-    filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
+    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
 }
+
+.top-pag-right{
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+.top-pag-right a {
+    text-decoration: none;
+}
+
+.top-pag-right p {
+    color: white;
+    font-size: 25px;
+    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
+}
+
+/* .animation{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0;
+    width: 80%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid blue;
+} */
+
+/* .img-ght{
+    display: flex;
+    align-content: center;
+    height: 120px;
+    width: 120px;
+    position: relative;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: 0%;
+        transform: scaleX(1);
+    }
+    50% {
+        left: 70%;
+        transform: scaleX(1);
+    }
+    51%{
+        transform: scaleX(-1);
+    }
+
+    100% {
+        left: 0;
+        transform: scaleX(-1);
+    }
+} */
 
 .main-pag {
     display: flex;
@@ -34,7 +103,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 80%;
+    width: 74%;
 }
 
 .noticias {
@@ -43,7 +112,7 @@ body {
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
     border-radius: 5px;
 }
@@ -51,28 +120,28 @@ body {
 .main-pag-left-top {
     display: flex;
     white-space: nowrap;
-    animation: rolar 12s linear infinite;
-    gap: 3.5rem;
-    border: 2px solid gold;
+    animation: rolar 60s linear infinite;
+    gap: 1.3rem;
+    /* border: 2px solid gold; */
     height: 100%;
 }
 
 .main-pag-left-top-divs {
     display: flex;
-    align-items: flex-start;
-    border: 1px solid blue;
-    height: 9.3rem;
+    align-items: center;
+    /* border: 1px solid blue; */
+    height: 4.3rem;
 }
 
 .main-pag-left-top img {
-    width: 200px;
-    height: 150px;
+    width: 110px;
+    height: 67px;
     margin-right: 10px;
 }
 
 @keyframes rolar {
   0% {
-    transform: translateX(0.58%);
+    transform: translateX(0.14%);
   }
   100% {
     transform: translateX(-50%);
@@ -81,13 +150,14 @@ body {
 
 .main-pag-left-top p{
     color: white;
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 20rem;
     white-space: normal;
+
     /*
-    word-wrap: break-word;  Garante a quebra de palavras longas 
+    word-wrap: break-word; quebra de palavras longas 
     overflow-wrap: break-word; Para garantir a quebra 
-      Permite a quebra de linha normal */
+     */
 }
 
 .imagens img {
@@ -97,7 +167,7 @@ body {
 
 .main-pag-left-bottom {
     display: grid;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.911);
     box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
     height: fit-content;
     border-radius: 5px;
@@ -105,22 +175,40 @@ body {
 }
 
 .main-pag-left-bottom h2 {
+    margin: 20px 0 0;
     font-size: 2.5rem;
     text-align: center;
     color: red;
+    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
 }
 
 .main-pag-right {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
-    width: 20%;
+    width: 26%;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-pag-right h3 {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 40px;
+}
+
+.main-pag-right p {
+    color: white;
+    font-size: 22px;
+    margin: 0 10px 0;
 }
 
 .sobre-dev {
     display: flex;
     gap: 2rem;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin: 1rem;
     align-items: center;
 }
@@ -133,6 +221,7 @@ body {
 }
 
 .sobre-dev p {
+    width: 80%;
     font-size: 1.5rem;
     color: white;
 }
@@ -144,9 +233,301 @@ body {
     margin-top: 8rem;
     height: 7.5rem;
     background-color: black;
+    background-image: url(/site/assets/ZXXD.gif);
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .footer-pag img {
     height: 90px;
     padding-top: 10px;
+}
+
+.main-pag-foot-animation{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 7vh;
+    width: 100%;
+    top: 0px;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid blue; */
+}
+
+.image-animation{
+    display: flex;
+    align-content: center;
+    /* border: 1px solid green; */
+    height: 82px;
+    width: 82px;
+    position: relative;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+        transform: scaleX(1);
+    }
+    50% {
+        left: 70%;
+        transform: scaleX(1);
+    }
+    51%{
+        transform: scaleX(-1);
+    }
+
+    100% {
+        left: 0;
+        transform: scaleX(-1);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+    background-size: 100% 6%;
+    }
+
+    .top-pag {
+        height: 4rem;
+        /* border: 1px solid green; */
+    }
+
+    .top-pag-logo {
+        height: 55px;
+        margin-left: 20px;
+    }
+
+    .top-pag-right {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    /* .animation{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin: 0;
+        width: 35%;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid blue;
+    }
+    
+    .img-ght{
+        height: 55px;
+        width: 55px;
+    }
+    
+    @keyframes slide {
+        0% {
+            left: 0%;
+            transform: scaleX(1);
+        }
+        50% {
+            left: 60%;
+            transform: scaleX(1);
+        }
+        51%{
+            transform: scaleX(-1);
+        }
+    
+        100% {
+            left: 0;
+            transform: scaleX(-1);
+        }
+    } */
+
+    .top-pag-right p {
+        color: white;
+        font-size: 16px;
+    }
+
+    .main-pag {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        gap: 2rem;
+    }
+
+    .main-pag-left{
+        width: 100%;
+    }
+
+    .main-pag-left-bottom {
+        display: grid;
+        background-color: rgba(0, 0, 0, 0.911);
+        box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+        height: fit-content;
+        border-radius: 5px;
+        gap: 2rem;
+    }
+    
+    .main-pag-left-bottom h2 {
+        font-size: 1.1rem;
+    }
+
+    .sobre-dev {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre-dev img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sobre-dev p {
+        font-size: 14px;
+        color: white;
+    }
+
+    .main-pag-right {
+        width: 100%;
+    }
+
+    .main-pag-right h3 {
+        font-size: 1.1rem;
+
+    }
+
+    .main-pag-right p {
+        font-size: 14px;
+    }
+    
+    .image-animation{
+        height: 50px;
+        width: 50px;
+    }
+
+    .footer-pag {
+        height: 4rem;
+        padding: 10px 0 0 10px;
+        background-size: 50%;
+    }
+
+    .footer-pag img {
+        height: 40px;
+        padding: 0;
+    }
+
+    .main-pag-foot-animation{
+        top: 0;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1400px) {
+    body {
+        background-size: 100% 7%;
+        }
+
+    .top-pag {
+        height: 5rem;
+    }
+
+    .top-pag-logo {
+        height: 70px;
+    }
+
+    .top-pag-right{
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    /* .animation{
+        width: 35%;
+    }
+    
+    .img-ght{
+        height: 80px;
+        width: 80px;
+    }
+    
+    @keyframes slide {
+        0% {
+            left: 0%;
+            transform: scaleX(1);
+        }
+        50% {
+            left: 60%;
+            transform: scaleX(1);
+        }
+        51%{
+            transform: scaleX(-1);
+        }
+    
+        100% {
+            left: 0;
+            transform: scaleX(-1);
+        }
+    } */
+
+    .top-pag-right p {
+        color: white;
+        font-size: 22px;
+    }
+
+    .main-pag {
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+        gap: 2rem;
+    }
+
+    .main-pag-left{
+        width: 100%;
+    }
+
+    .main-pag-left-bottom h2 {
+        font-size: 2rem;
+    }
+
+    .sobre-dev {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sobre-dev img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .sobre-dev p {
+        font-size: 22px;
+        color: white;
+    }
+
+    .main-pag-right {
+        width: 100%;
+    }
+
+    .main-pag-right h3 {
+        font-size: 2rem;
+    }
+
+    .main-pag-right p {
+        font-size: 22px;
+    }
+    
+    .image-animation{
+        height: 80px;
+        width: 80px;
+    }
+
+    .footer-pag {
+        height: 5rem;
+        padding: 15px 0 0 10px;
+        background-size: 40%;
+    }
+
+    .footer-pag img {
+        height: 50px;
+        padding: 0;
+    }
+
+    .main-pag-foot-animation{
+        top: 0;
+    }
 }
