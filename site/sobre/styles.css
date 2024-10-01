@@ -41,7 +41,7 @@ body {
 
 .top-pag-logo:hover {
     transform: scale(1.1); /* Aumenta a imagem para 110% do tamanho original */
-  }
+}
 
 /* .animation{
     display: flex;
@@ -238,9 +238,9 @@ body {
     display: flex;
     align-items: center;
     margin: 0;
-    height: 7vh;
+    height: 17vh;
     width: 100%;
-    top: 77px;
+    top: 145px;
     position: relative;
     overflow: hidden;
     /* border: 1px solid blue; */
@@ -250,8 +250,8 @@ body {
     display: flex;
     align-content: center;
     /* border: 1px solid green; */
-    height: 82px;
-    width: 82px;
+    height: 180px;
+    width: 180px;
     position: relative;
     animation: slide 20s infinite;
 }
@@ -378,9 +378,13 @@ body {
         font-size: 14px;
     }
     
+    .main-pag-foot-animation{
+        top: 12px;
+    }
+
     .image-animation{
-        height: 50px;
-        width: 50px;
+        height: 100px;
+        width: 100px;
     }
 
     .footer-pag {
@@ -392,10 +396,6 @@ body {
     .footer-pag img {
         height: 40px;
         padding: 0;
-    }
-
-    .main-pag-foot-animation{
-        top: 0;
     }
 }
 
@@ -483,13 +483,12 @@ body {
     }
     
     .main-pag-foot-animation{
-        top: 0;
-        /* margin-top: 30px; */
+        top: 12px;
     }
 
     .image-animation{
-        height: 80px;
-        width: 80px;
+        height: 170px;
+        width: 170px;
     }
 
     .footer-pag {
