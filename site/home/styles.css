@@ -17,15 +17,6 @@ body {
     height: 100%;
 }
 
-
-.logo {
-    display: flex;
-    justify-content: center;
-    margin: 1rem;
-    position: absolute;
-    margin-right: 3vh;
-}
-
 .topbar{
     margin-top: 2rem;
     height: 6rem;
@@ -37,8 +28,12 @@ body {
 .logo img {
     height: 90px;
     filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
+    transition: transform 0.3s ease;
 }
 
+.logo :hover{
+    transform: scale(1.1);
+}
 .navbar {
     width: fit-content;
     display: flex;
@@ -91,31 +86,6 @@ body {
     border-radius: 5px;
 }
 
-.gif-the-last-of-us{
-    display: flex;
-    justify-content: center;
-    height: 20vh;
-    width: 131vh;
-    margin-left: 3rem;
-}
-
-.gif-the-last-of-us img{
-    height: 20vh;
-    width: 40vh;
-}
-
-.main-pag-left-top {
-    background-color: brown;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem;
-    margin-bottom: 1rem;
-    height: 20vh;
-    width: 131vh;
-}
-
 .noticias {
     display: flex;
     align-items: center;
@@ -125,6 +95,61 @@ body {
     background-color: rgba(0, 0, 0, 0.459);
     box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
     border-radius: 5px;
+}
+
+.main-pag-left-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    white-space: nowrap;
+    animation: rolar 60s linear infinite;
+    gap: 1.3rem;
+}
+
+.main-pag-left-top-divs {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid blue; */
+    height: 4.3rem;
+}
+
+.main-pag {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+    gap: 3rem;
+    height: 100%;
+}
+
+.main-pag-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 74%;
+}
+
+.main-pag-left-top img {
+    width: 110px;
+    height: 67px;
+    margin-right: 10px;
+}
+
+@keyframes rolar {
+  0% {
+    transform: translateX(0.14%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.main-pag-left-top p{
+    color: white;
+    /* border: 1px solid green; */
+    width: 20rem;
+    white-space: normal;
 }
 
 .main-pag-left-left {
@@ -166,7 +191,7 @@ body {
     align-items: center;
     width: 55vh;
     height: 50vh;
-    margin: 2rem;
+    margin: 8rem;
     margin-left: 1rem;
 }
 
@@ -176,6 +201,19 @@ body {
 
 .main-pag-left-right a:hover{
     transform: scale(1.1);
+}
+
+.gif-the-last-of-us{
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    width: 131vh;
+    margin-left: 3rem;
+}
+
+.gif-the-last-of-us img{
+    height: 20vh;
+    width: 40vh;
 }
 
 .main-pag-container-left-bot img{
@@ -230,31 +268,73 @@ body {
 }
 
 .container-main-pag-bot-right{
-    background-color: blueviolet;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
     height: 100vh;
     width: 100vh;
+    margin: 3rem;
+    border-radius: 5px;
 }
 
 .main-pag-bot-right-top{
-    background-color: azure;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 7rem;
-    height: 40vh;
+    margin-top: 1rem;
+    height: 34vh;
+    width: 100vh;
+}
+
+.gif-movies-grid{
+    height: 32vh;
+    width: 80vh;
+    border-radius: 7px;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+}
+
+.main-pag-bot-right-top a{
+    transition: transform 0.3s ease-in-out;
+}
+
+.main-pag-bot-right-top a:hover{
+    transform: scale(1.1);
 }
 
 .main-pag-bot-right-bot{
-    background-color: azure;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 34vh;
     width: 100vh;
     align-items: flex-end;
+    margin-top: 1rem;
+}
+
+.bot-right-grid-title{
+    background-color: black;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    display: flex;
+    font-style: italic;
+    color: lightgray;
+    justify-content: center;
+    align-items: flex-end;
+    height: fit-content;
+    width: fit-content;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.gif-games-grid{
+    height: 32vh;
+    width: 80vh;
+    border-radius: 7px;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
 }
 
 .main-pag-bot-right-bot a{
@@ -265,32 +345,10 @@ body {
     transform: scale(1.1);
 }
 
-.bot-right-grid-title{
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 5vh;
-    width: fit-content;
-    font-size: 1.5rem;
-    margin-left: 4rem;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.gif-games-grid{
-    margin-top: 0;
-    height: 32vh;
-    width: 80vh;
-    border-radius: 7px;
-    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
-}
-
 footer{
     padding: 1rem 0 2rem 2rem;
     border-top: 2px;
     box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
-    margin-top: 0rem;
     height: 7.5rem;
     background-color: black;
     display: flex;
@@ -298,20 +356,20 @@ footer{
 }
 
 .footer-pag img {
-    height: 90px;
+    height: 6rem;
+    width: 6rem;
     padding-top: 10px;
     filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
 }
 
 .main-pag-foot-animation{
     margin-right: 1rem; 
-    height: 12vh;
+    height: 10vh;
     width: 100%;
     overflow: hidden;
 }
 
 .image-animation{
-    padding-bottom: 0rem;
     height: 90px;
     width: 90px;
     position: relative;
@@ -340,3 +398,6 @@ footer{
  /* @media only screen and (max-width: 600px) {
     
 }  */
+
+   
+  
