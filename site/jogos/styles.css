@@ -139,8 +139,8 @@ body {
 }
 
 .main-pag-right p {
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin: 10px 10px 10px 10px;
+    font-size: 19px;
 }
 
 
@@ -180,7 +180,7 @@ body {
     width: 100%;
   }
   .main-pag-right p {
-    font-size: 15px;
+    font-size: 14px;
   }
   .footer-pag {
     height: 70px;
@@ -249,7 +249,7 @@ body {
     height: 100%;
   }
   .main-pag-right p {
-    font-size: 1.3rem;
+    font-size: 1.23rem;
   }
 
   .main-pag-left-bottom {
