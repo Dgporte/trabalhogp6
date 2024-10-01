@@ -11,33 +11,33 @@ body {
     font-optical-sizing: auto;
     font-weight: 5px;
     font-style: normal;
-}
-
-.top-pag {
+  }
+  
+  .top-pag {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6rem;
     overflow: hidden;
-}
-
+  }
+  
 .top-pag img {
-    height: 90px;
+  height: 90px;
     padding-top: 10px;
     filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
     transition: transform 0.3s ease;
-}
+  }
 
 .top-pag img:hover {
   transform: scale(1.1); /* Aumenta a imagem para 110% do tamanho original */
 }
 
 .main-pag {
-    display: flex;
-    justify-content: space-between;
-    margin: 3rem;
-    gap: 3rem;
-    height: 70rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem;
+  gap: 3rem;
+  height: 70rem;
 }
 
 .main-pag-left{
@@ -45,25 +45,25 @@ body {
     flex-direction: column;
     gap: 2rem;
     width: 80%;
-}
-
-.main-pag-left-top {
+  }
+  
+  .main-pag-left-top {
     background-color: black;
     box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
     height: 40%;
     border-radius: 5px;
-}
-
-.main-pag-left-top img {
+  }
+  
+  .main-pag-left-top img {
     height: 25rem;
     width: 100%;
     border-radius: 5px;
-}
-
-.carousel-container {
+  }
+  
+  .carousel-container {
     position: relative;
     width: 100%; /* MUDANÇA: Ajustado para 100% para cobrir toda a largura */
-     height: 100%; /* Altura do carrossel */
+    height: 100%; /* Altura do carrossel */
     margin: 0 auto;
     overflow: hidden;
     border-radius: 5px;
@@ -89,7 +89,7 @@ body {
     height: 100%; /* Impede que a imagem ultrapasse a altura */
     object-fit: cover;
   }
-
+  
   button.prev, button.next {
     position: absolute;
     top: 50%;
@@ -114,15 +114,15 @@ body {
   button:hover {
     background-color: rgba(0, 0, 0, 0.7);
   }
-
-.main-pag-left-bottom {
+  
+  .main-pag-left-bottom {
     background-color: black;
     color: white;
     box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
     height: 100%;
     border-radius: 5px;
-
-}
+    
+  }
 
 .main-pag-left-bottom iframe {
   width: 100%;
@@ -131,16 +131,16 @@ body {
 }
 
 .main-pag-right {
-    background-color: black;
-    color: white;
-    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
-    width: 20%;
-    border-radius: 5px;
+  background-color: black;
+  color: white;
+  box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+  width: 20%;
+  border-radius: 5px;
 }
 
 .main-pag-right p {
-    margin: 10px 10px 10px 10px;
-    font-size: 19px;
+  margin: 10px 10px 10px 10px;
+  font-size: 19px;
 }
 
 
