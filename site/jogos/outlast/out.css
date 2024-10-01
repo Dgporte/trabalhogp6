@@ -79,7 +79,8 @@ body {
     display: flex;
     flex-direction: column; /* Empilha verticalmente */
     gap: 2rem;
-    width: 20%; /* Espaço entre as divs */
+    width: 20%;
+    height: 100%; /* Espaço entre as divs */
 }
 
 .main-pag-right {
@@ -107,7 +108,7 @@ body {
 }
 
 .main-pag-right-two p {
-    font-size: 15.5px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
@@ -126,4 +127,147 @@ body {
     filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
     height: 90px;
     padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-pag {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-pag {
+        height: 70px;
+    }
+
+    .top-pag img {
+        height: 70px;
+    }
+
+    .main-pag-left {
+        width: 100%;
+    }
+
+    .two-main-right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .two-main-right p {
+        font-size: 0.7rem;
+    }
+
+    .footer-pag {
+        height: 70px;
+        padding: 0;
+        background-image: url(../assets/outgif.gif);
+        background-size: cover;
+        background-position: center -40px;
+        background-repeat: no-repeat;
+    }
+
+    .footer-pag img {
+        height: 61px;
+        margin-top: 2px;
+        padding: 15px 0 1px 10px;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 1400px) {
+    .main-pag {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .top-pag {
+        height: 70px;
+    }
+
+    .top-pag img {
+        height: 70px;
+    }
+
+    .main-pag-left {
+        width: 100%;
+        height: 40rem;
+    }
+
+    .two-main-right {
+        width: 100%;
+        height: 80rem;
+    }
+
+    .two-main-right img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .two-main-right p {
+        font-size: 1.4rem;
+    }
+
+
+    .footer-pag {
+        height: 9rem;
+        padding: 0;
+        background-image: url(../assets/outgif.gif);
+        background-size: cover;
+        background-position: center -100px;
+        background-repeat: no-repeat;
+    }
+
+    .footer-pag img {
+        height: 81px;
+        margin-top: 15px;
+        padding: 15px 0 1px 20px;
+    }
+
+}
+
+@media (min-width: 1401px) and (max-width: 1700px) {
+    
+    .top-pag {
+        height: 100%;
+    }
+
+    .top-pag img {
+        height: 100px;
+    }
+
+    .main-pag-left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .two-main-right {
+        width: 30%;
+        height: 100%;
+    }
+
+    .two-main-right img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .two-main-right p {
+        font-size: 0.9rem;
+    }
+
+
+    .footer-pag {
+        height: 7.5rem;
+        padding: 0;
+        background-image: url(../assets/outgif.gif);
+        background-size: cover;
+        background-position: center -270px;
+        background-repeat: no-repeat;
+    }
+
+    .footer-pag img {
+        height: 80px;
+        margin-top: 20px;
+        padding: 15px 0 1px 20px;
+    }
+
 }
