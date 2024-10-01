@@ -27,6 +27,11 @@ body {
   height: 90px;
   padding-top: 10px;
   filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
+  transition: transform 0.3s ease;
+  }
+
+.top-pag img:hover {
+  transform: scale(1.1); /* Aumenta a imagem para 110% do tamanho original */
 }
 
 .main-pag {
