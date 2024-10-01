@@ -106,8 +106,8 @@ body {
 }
 
 .main-pag-right-two p {
-    font-size: 14.5px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin: 10px;
 }
 
 .footer-pag {
@@ -152,7 +152,7 @@ body {
     }
 
     .two-main-right p {
-        font-size: 0.7rem;
+        font-size: 0.63rem;
     }
 
     .footer-pag {
@@ -203,7 +203,7 @@ body {
     }
 
     .two-main-right p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 
 
@@ -250,7 +250,7 @@ body {
     }
 
     .two-main-right p {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
 
