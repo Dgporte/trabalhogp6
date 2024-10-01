@@ -1,0 +1,338 @@
+/*
+ *   Copyright (c) 2024 
+ *   All rights reserved.
+ */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 5px;
+    font-style: normal;
+}
+
+.top-pag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url(https://i.gifer.com/5362.gif);
+    background-size: cover;
+    background-position: center -70px;
+    background-repeat:repeat;
+}
+
+.top-pag img {
+    height: 90px;
+    padding-top: 10px;
+    filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
+    transition: transform 0.3s ease;
+}
+
+.top-pag img:hover {
+  transform: scale(1.1); /* Aumenta a imagem para 110% do tamanho original */
+}
+
+.main-pag {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+    gap: 3rem;
+    height: 70rem;
+}
+
+.main-pag-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+}
+
+.main-pag-left-top {
+    background-color: black;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    height: 40%;
+    border-radius: 5px;
+    /* Personalize com conteúdo adicional */
+}
+
+.main-pag-left-top img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.main-pag-left-bottom {
+    background-color: black;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    height: 70%;
+    border-radius: 5px;
+}
+
+.main-pag-left-bottom iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+.two-main-right {
+    display: flex;
+    flex-direction: column; /* Empilha verticalmente */
+    gap: 2rem;
+    width: 20%; /* Espaço entre as divs */
+}
+
+.main-pag-right {
+    background-color: black;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    /* width: 20%; */
+    border-radius: 5px;
+    height: 40%;
+    /* Personalize com conteúdo adicional */
+}
+
+.main-pag-right img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.main-pag-right-two {
+    background-color: black;
+    color: white;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    border-radius: 5px;
+    height: 60%;
+    /* Personalize com conteúdo adicional */
+}
+
+.main-pag-right-two p {
+    font-size: 15.5px;
+    margin-bottom: 10px;
+}
+
+.footer-pag {
+    padding: 1rem 0 2rem 2rem;
+    box-shadow: hsla(0, 100%, 50%, 0.9) 0px 0px 20px;
+    margin-top: 8rem;
+    height: 7.5rem;
+    /* background-image: url(../assets/legion2.webp); mudar */
+    background-size: cover;
+    background-position: center -260px; /* Centraliza a imagem no contêiner */
+    background-repeat: no-repeat;
+}
+
+.logoImg {
+    filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
+    height: 90px;
+    padding-top: 10px;
+}
+
+.footer-pag {
+    background-image: url(https://i.gifer.com/YMLi.gif);
+    background-size: contain ;
+    background-position:right 10px;
+    background-repeat: no-repeat;
+    background-position: 85vw;
+}
+
+@media (min-width: 601px) and (max-width: 1400px) {
+    .main-pag {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .top-pag {
+        height: 70px;
+    }
+
+    .top-pag img {
+        height: 70px;
+    }
+
+    .main-pag-left {
+        width: 100%;
+        height: 40rem;
+    }
+
+    .two-main-right {
+        width: 100%;
+        height: 80rem;
+    }
+
+    .two-main-right img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .two-main-right p {
+        font-size: 1.4rem;
+    }
+
+
+    .footer-pag {
+        height: 9rem;
+        padding: 0;
+        background-image: url(https://i.gifer.com/YMLi.gif);
+        background-size: cover;
+        background-position: center -120px;
+        background-repeat: no-repeat;
+    }
+
+    .footer-pag img {
+        height: 81px;
+        margin-top: 15px;
+        padding: 15px 0 1px 20px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .main-pag {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-pag {
+        height: 70px;
+    }
+
+    .top-pag img {
+        height: 70px;
+    }
+
+    .main-pag-left {
+        width: 100%;
+    }
+
+    .two-main-right {
+        width: 100%;
+        height: 100%;
+    }
+
+    .two-main-right p {
+        font-size: 0.7rem;
+    }
+
+    .footer-pag {
+        height: 70px;
+        padding: 0;
+        background-image: url(https://i.gifer.com/YMLi.gif);
+        background-size: cover;
+        background-position: center -80px;
+        background-repeat: no-repeat;
+    }
+
+    .footer-pag img {
+        height: 61px;
+        margin-top: 2px;
+        padding: 15px 0 1px 10px;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 1400px) {
+    .main-pag {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .top-pag {
+        height: 70px;
+    }
+
+    .top-pag img {
+        height: 70px;
+    }
+
+    .main-pag-left {
+        width: 100%;
+        height: 40rem;
+    }
+
+    .two-main-right {
+        width: 100%;
+        height: 80rem;
+    }
+
+    .two-main-right img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .two-main-right p {
+        font-size: 1.4rem;
+    }
+
+
+    .footer-pag {
+        height: 9rem;
+        padding: 0;
+        background-image: url(https://i.gifer.com/YMLi.gif);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .footer-pag img {
+        height: 81px;
+        margin-top: 15px;
+        padding: 15px 0 1px 20px;
+    }
+
+}
+
+@media (min-width: 1401px) and (max-width: 1700px) {
+    
+    .top-pag {
+        height: 100%;
+    }
+
+    .top-pag img {
+        height: 100px;
+    }
+
+    .main-pag-left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .two-main-right {
+        width: 30%;
+        height: 100%;
+    }
+
+    .two-main-right img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .two-main-right p {
+        font-size: 0.9rem;
+    }
+
+
+    .footer-pag {
+        height: 7.5rem;
+        padding: 0;
+        background-image: url(https://i.gifer.com/YMLi.gif);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .footer-pag img {
+        height: 80px;
+        margin-top: 25px;
+        padding: 15px 0 1px 20px;
+    }
+
+}
