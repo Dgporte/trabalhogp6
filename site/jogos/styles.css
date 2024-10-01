@@ -1,32 +1,36 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    height: 100%;
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 5px;
-    font-style: normal;
-  }
-  
-  .top-pag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6rem;
-    overflow: hidden;
-  }
-  
+  background-image: url(../assets/5362.gif);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 25%;
+  background-color: black;
+  height: 100%;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 5px;
+  font-style: normal;
+}
+
+.top-pag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  overflow: hidden;
+}
+
 .top-pag img {
   height: 90px;
-    padding-top: 10px;
-    filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
-    transition: transform 0.3s ease;
-  }
+  padding-top: 10px;
+  filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
+  transition: transform 0.3s ease;
+}
 
 .top-pag img:hover {
   transform: scale(1.1); /* Aumenta a imagem para 110% do tamanho original */
@@ -40,89 +44,89 @@ body {
   height: 70rem;
 }
 
-.main-pag-left{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 80%;
-  }
-  
-  .main-pag-left-top {
-    background-color: black;
-    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
-    height: 40%;
-    border-radius: 5px;
-  }
-  
-  .main-pag-left-top img {
-    height: 25rem;
-    width: 100%;
-    border-radius: 5px;
-  }
-  
-  .carousel-container {
-    position: relative;
-    width: 100%; /* MUDANÇA: Ajustado para 100% para cobrir toda a largura */
-    height: 100%; /* Altura do carrossel */
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 5px;
-  }
-  
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    height: 100%;
-  }
-  
-  .carousel-item {
-    min-width: 100%; /* Ocupa toda a largura do carrossel */
-    display: flex; /* Flexbox para centralizar a imagem */
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    position: relative;
-    height: 100%;
-  }
-  
-  .carousel-item img {
-    width: 100%; /* Impede que a imagem ultrapasse o contêiner */
-    height: 100%; /* Impede que a imagem ultrapasse a altura */
-    object-fit: cover;
-  }
-  
-  button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    z-index: 1;
-  }
-  
-  button.prev {
-    left: 10px;
-  }
-  
-  button.next {
-    right: 10px;
-  }
-  
-  button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .main-pag-left-bottom {
-    background-color: black;
-    color: white;
-    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
-    height: 100%;
-    border-radius: 5px;
-    
-  }
+.main-pag-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80%;
+}
+
+.main-pag-left-top {
+  background-color: black;
+  box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+  height: 40%;
+  border-radius: 5px;
+}
+
+.main-pag-left-top img {
+  height: 25rem;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%; /* MUDANÇA: Ajustado para 100% para cobrir toda a largura */
+  height: 100%; /* Altura do carrossel */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.carousel-item {
+  min-width: 100%; /* Ocupa toda a largura do carrossel */
+  display: flex; /* Flexbox para centralizar a imagem */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  position: relative;
+  height: 100%;
+}
+
+.carousel-item img {
+  width: 100%; /* Impede que a imagem ultrapasse o contêiner */
+  height: 100%; /* Impede que a imagem ultrapasse a altura */
+  object-fit: cover;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main-pag-left-bottom {
+  background-color: black;
+  color: white;
+  box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+  height: 100%;
+  border-radius: 5px;
+}
 
 .main-pag-left-bottom iframe {
   width: 100%;
@@ -143,23 +147,22 @@ body {
   font-size: 19px;
 }
 
-
 .footer-pag {
-    padding: 1rem 0 2rem 2rem;
-    border-top: 2px;
-    box-shadow: hsla(0, 100%, 50%, 0.9) 0px 0px 20px;
-    margin-top: 8rem;
-    height: 7.5rem;
-    background-image: url(../assets/residentvil.gif);
-    background-size: cover; /* Redimensiona para cobrir todo o contêiner */
-    background-position: center -350px; /* Centraliza a imagem no contêiner */
-    background-repeat: no-repeat;
+  padding: 1rem 0 2rem 2rem;
+  border-top: 2px;
+  box-shadow: hsla(0, 100%, 50%, 0.9) 0px 0px 20px;
+  margin-top: 8rem;
+  height: 7.5rem;
+  background-image: url(../assets/residentvil.gif);
+  background-size: cover; /* Redimensiona para cobrir todo o contêiner */
+  background-position: center -350px; /* Centraliza a imagem no contêiner */
+  background-repeat: no-repeat;
 }
 
 .logoImg {
-    filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
-    height: 90px;
-    padding-top: 10px;
+  filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
+  height: 90px;
+  padding-top: 10px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -186,15 +189,14 @@ body {
     height: 70px;
     padding: 0;
     background-image: url(../assets/residentvil.gif);
-    background-size: cover; 
-    background-position: center -60px; 
+    background-size: cover;
+    background-position: center -60px;
     background-repeat: no-repeat;
   }
   .footer-pag img {
     height: 51px;
     padding: 15px 0 1px 10px;
   }
-  
 }
 
 @media (min-width: 601px) and (max-width: 1400px) {
@@ -231,7 +233,6 @@ body {
     margin-top: 10px;
     padding: 18px 0 1px 20px;
   }
-  
 }
 
 @media (min-width: 1401px) and (max-width: 1700px) {
