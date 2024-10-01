@@ -152,6 +152,28 @@ body {
     white-space: normal;
 }
 
+.container-title-left-bot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    gap: 6rem;
+    margin-top: 6rem;
+}
+
+.container-title{
+    background-color: rgba(0, 0, 0, 0.459);
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    border-radius: 7px;
+    color: lightgray;
+    margin-left: 6rem;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-right: 3rem;
+    text-align: center;
+}
+
 .main-pag-left-left {
     display: flex;
     width: 55vh;
@@ -159,12 +181,6 @@ body {
     margin: 2rem;
     margin-right: 1rem;
 }
-
-.main-pag-left-left p{
-    color:aliceblue;
-    top: 50%;
-    left: 50%;
-} 
 
 .main-pag-left-left a{
     transition: 0.3s ease-in-out;
@@ -180,8 +196,9 @@ body {
     width: 131vh;
     justify-content: space-between; 
     align-items: center;
-    gap: 1rem; 
+    gap: 2rem; 
     margin: 3rem;
+    margin-top: 0;
 }
 
 .main-pag-left-right{
@@ -191,7 +208,7 @@ body {
     align-items: center;
     width: 55vh;
     height: 50vh;
-    margin: 8rem;
+    margin: 2rem;
     margin-left: 1rem;
 }
 
@@ -209,6 +226,7 @@ body {
     height: 20vh;
     width: 131vh;
     margin-left: 3rem;
+    margin-top: 3rem;
 }
 
 .gif-the-last-of-us img{
@@ -258,14 +276,53 @@ body {
 }
 
 .main-pag-bot-left{
-    background-color: brown;
+    background-color: black;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    border-radius: 5px;
     margin: 3rem;
     width: 55vh;
-    height: 88vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.main-pag-bot-left h2{
+    background: #222;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    padding: 1rem;
+    color: lightgray;
+    border-radius: 7px;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+#countdown {
+    font-size: 2em;
+    background: #222;
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    margin: 2rem;
+    color: lightgray;
+    padding: 20px;
+    border-radius: 7px;
+    margin-top: 5rem;
+  }
+  
+  #countdown span {
+    margin: 2 10px;
+  }
+
+  .halloween-gif{
+    margin-top: 5rem;
+  }
+
+  .halloween-gif img{
+    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+    border-radius: 7px;
+    height: 40vh;
+    width: 50vh;
+  }
 
 .container-main-pag-bot-right{
     box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
