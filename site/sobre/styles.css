@@ -19,6 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 6rem;
+    overflow: hidden;
 }
 
 .top-pag-center {
@@ -35,22 +36,12 @@ body {
     height: 90px;
     padding-top: 10px;
     filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
+    transition: transform 0.3s ease;
 }
 
-.top-pag-right{
-    margin-left: auto;
-    margin-right: 60px;
-}
-
-.top-pag-right a {
-    text-decoration: none;
-}
-
-.top-pag-right p {
-    color: white;
-    font-size: 25px;
-    filter: drop-shadow(2px 2px 10px rgb(0, 0, 0));
-}
+.top-pag-logo:hover {
+    transform: scale(1.1); /* Aumenta a imagem para 110% do tamanho original */
+  }
 
 /* .animation{
     display: flex;
@@ -300,11 +291,6 @@ body {
         margin-left: 20px;
     }
 
-    .top-pag-right {
-        margin-left: auto;
-        margin-right: 20px;
-    }
-
     /* .animation{
         display: flex;
         justify-content: left;
@@ -339,11 +325,6 @@ body {
             transform: scaleX(-1);
         }
     } */
-
-    .top-pag-right p {
-        color: white;
-        font-size: 16px;
-    }
 
     .main-pag {
         display: flex;
@@ -431,11 +412,6 @@ body {
         height: 70px;
     }
 
-    .top-pag-right{
-        margin-left: auto;
-        margin-right: 30px;
-    }
-
     /* .animation{
         width: 35%;
     }
@@ -463,11 +439,6 @@ body {
             transform: scaleX(-1);
         }
     } */
-
-    .top-pag-right p {
-        color: white;
-        font-size: 22px;
-    }
 
     .main-pag {
         display: flex;
@@ -511,6 +482,11 @@ body {
         font-size: 22px;
     }
     
+    .main-pag-foot-animation{
+        top: 0;
+        /* margin-top: 30px; */
+    }
+
     .image-animation{
         height: 80px;
         width: 80px;
@@ -527,7 +503,4 @@ body {
         padding: 0;
     }
 
-    .main-pag-foot-animation{
-        top: 0;
-    }
 }
