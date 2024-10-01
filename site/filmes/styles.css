@@ -256,6 +256,7 @@ button:hover {
     .main-pag {
         display: flex;
         flex-direction: column;
+        height: 100%;
     }
 
     .top-pag {
@@ -268,10 +269,6 @@ button:hover {
 
     .carousel-container {
         width: 100%;
-        height: 100%;
-    }
-
-    .main-pag-left {
         height: 100%;
     }
 
@@ -295,7 +292,13 @@ button:hover {
     .main-pag-left {
         margin: 0;
         display: flex;
+        height: 10px;
         flex-direction: column;
+    }
+
+    .main-pag-right{
+        height: 10px;
+
     }
 }
 
