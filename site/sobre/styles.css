@@ -6,7 +6,7 @@
 
 body {
     /* background-image: url(/site/assets/YVPK.gif); */
-    background-image: url(/site/assets/5362.gif);
+    background-image: url(../assets/5362.gif);
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100% 25%;
@@ -224,7 +224,7 @@ body {
     margin-top: 8rem;
     height: 7.5rem;
     background-color: black;
-    background-image: url(/site/assets/ZXXD.gif);
+    background-image: url(../assets/ZXXD.gif);
     background-repeat: no-repeat;
     background-position: right;
 }
