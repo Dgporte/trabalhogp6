@@ -7,6 +7,10 @@
 body {
     background-color: black;
     height: 100%;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 5px;
+    font-style: normal;
 }
 
 .top-pag {
@@ -14,12 +18,18 @@ body {
     justify-content: center;
     align-items: center;
     height: 6rem;
+    overflow: hidden;
 }
 
 .top-pag img {
     height: 90px;
     padding-top: 10px;
     filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
+    transition: transform 0.3s ease;
+}
+
+.top-pag img:hover {
+  transform: scale(1.1); /* Aumenta a imagem para 110% do tamanho original */
 }
 
 .main-pag {
@@ -56,6 +66,7 @@ body {
      height: 100%; /* Altura do carrossel */
     margin: 0 auto;
     overflow: hidden;
+    border-radius: 5px;
   }
   
   .carousel {
@@ -77,22 +88,6 @@ body {
     width: 100%; /* Impede que a imagem ultrapasse o contêiner */
     height: 100%; /* Impede que a imagem ultrapasse a altura */
     object-fit: cover;
-  }
-  
-  .carousel-text {
-    border: 2px red solid;
-    display: flex;
-    position: absolute;
-    bottom: 20px;
-    margin-bottom: 40px;
-    left: 0;
-    right: 0;
-    text-align: left;
-    width: 15rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 20px;
-    padding: 10px;
   }
 
   button.prev, button.next {
@@ -132,6 +127,7 @@ body {
 .main-pag-left-bottom iframe {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 
 .main-pag-right {
@@ -144,7 +140,7 @@ body {
 
 .main-pag-right p {
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 
@@ -166,4 +162,117 @@ body {
     padding-top: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .main-pag {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-pag {
+    height: 70px;
+  }
+  .top-pag img {
+    height: 70px;
+  }
+  .main-pag-left {
+    width: 100%;
+  }
+  .main-pag-right {
+    width: 100%;
+  }
+  .main-pag-right p {
+    font-size: 15px;
+  }
+  .footer-pag {
+    height: 70px;
+    padding: 0;
+    background-image: url(../assets/residentvil.gif);
+    background-size: cover; 
+    background-position: center -60px; 
+    background-repeat: no-repeat;
+  }
+  .footer-pag img {
+    height: 51px;
+    padding: 15px 0 1px 10px;
+  }
+  
+}
 
+@media (min-width: 601px) and (max-width: 1400px) {
+  .main-pag {
+    display: flex;
+    flex-direction: column;
+  }
+  .top-pag {
+    height: 70px;
+  }
+  .top-pag img {
+    height: 70px;
+  }
+  .main-pag-left {
+    width: 100%;
+  }
+  .main-pag-right {
+    width: 100%;
+    height: 50%;
+  }
+  .main-pag-right p {
+    font-size: 1.1rem;
+  }
+  .footer-pag {
+    height: 16.5rem;
+    padding: 0;
+    background-image: url(../assets/residentvil.gif);
+    background-size: cover; /* Redimensiona para cobrir todo o contêiner */
+    background-position: center -130px; /* Centraliza a imagem no contêiner */
+    background-repeat: no-repeat;
+  }
+  .footer-pag img {
+    height: 75px;
+    margin-top: 10px;
+    padding: 18px 0 1px 20px;
+  }
+  
+}
+
+@media (min-width: 1401px) and (max-width: 1700px) {
+  .top-pag {
+    height: 70px;
+  }
+  .top-pag img {
+    height: 80px;
+  }
+  .main-pag-left {
+    width: 100%;
+  }
+  .main-pag-right {
+    width: 40%;
+    height: 100%;
+  }
+  .main-pag-right p {
+    font-size: 1.3rem;
+  }
+
+  .main-pag-left-bottom {
+    height: 100%;
+    width: 100%;
+  }
+
+  .main-pag-left-bottom iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer-pag {
+    height: 11rem;
+    padding: 0;
+    background-image: url(../assets/residentvil.gif);
+    background-size: cover; /* Redimensiona para cobrir todo o contêiner */
+    background-position: center -230px; /* Centraliza a imagem no contêiner */
+    background-repeat: no-repeat;
+  }
+  .footer-pag img {
+    height: 105px;
+    margin-top: 30px;
+    padding: 18px 0 1px 35px;
+  }
+}
