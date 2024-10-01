@@ -1,226 +1,367 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    background-image: var();
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 5px;
-    font-style: normal;
+  background-color: black;
+  background-image: var();
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 5px;
+  font-style: normal;
 }
 
 #bg {
-    position: fixed;
-    background-attachment: scroll;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    z-index: -1;
+  position: fixed;
+  /* background-attachment: scroll; */
+  /* top: 0; */
+  /* left: 0; */
+  width: 100%;
+  height: 100%;
+  /* overflow: hidden; */
+  z-index: -1;
 }
 
 .top-pag {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
 }
 
 .main-pag {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 3rem;
-    gap: 3rem;
-    height: 105vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
+  gap: 3rem;
 }
 
 .top-pag img {
-    height: 90px;
-    padding-top: 10px;
-    filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
+  height: 90px;
+  padding-top: 10px;
+  filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
 }
 
-/*.contato{
-    display: flex;
-    flex-direction: column;    
-    width: 35%;
-    height: 80vh;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-color: #b3b3b3;
-    text-decoration: none;    
-    filter: drop-shadow( 3px 3px 10px rgb(146, 13, 13));
+.contato {
+  background-color: black;
+  box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+  color: white;
+  border-radius: 10px;
 }
 
-.contato h1{
-    font-size: 3rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+.form-central h4 {
+  padding-bottom: 30px;
 }
 
-.contato form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: large;    
-}*/
-
-
-.contato form textarea{
-    width: 20rem;
-    height: 5rem;
+.inputBox {
+  position: relative;
+  width: 100%;
 }
 
-.contato form input{
-    width: 15rem;
-    height: 2rem;
+.inputUser {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
 }
 
-.contato form input[type="submit"]{
-    background-color: black;
-    color: white;
-    filter: drop-shadow(2px 2px 10px rgb(146, 13, 13))    
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
 }
 
-.contato form input[type="submit"]:hover{
-    filter: drop-shadow(3px 3px 10px rgb(192, 0, 0));
-    scale: 1.009;
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+  top: -20px;
+  font-size: 18px;
+  color: rgb(160, 40, 40);
+}
+
+.text-form,
+.form-label,
+.text-form-bottom {
+  color: rgb(199, 12, 12);
+}
+
+.form-label-mensage {
+  color: white;
+}
+
+.form-control-mensage-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.contato form textarea {
+  width: 25rem;
+  height: 5rem;
+}
+
+.contato form input {
+  width: 100%;
+  height: 2rem;
+}
+
+#message {
+  background-color: rgba(231, 227, 227, 0.295);
+}
+
+textarea {
+  color: white;
+  padding-left: 2px;
+}
+
+textarea::placeholder {
+  color: rgba(255, 255, 255, 0.637);
+  padding-left: 2px;
+}
+
+#submit {
+  background: linear-gradient(to right, rgb(0, 0, 0), #ff0000);
+  width: 20rem;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 1s;
+}
+
+#submit:hover {
+  background: #ff0000bd;
 }
 
 .footer-pag {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem 0 2rem 2rem;
-    border-top: 2px;
-    box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
-    margin-top: 7rem;
-    height: 8.5rem;
-    width: 100%;
-    background-color: black ;
+  display: flex;
+  /* position: fixed; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 0 2rem 2rem;
+  border-top: 2px;
+  box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
+  margin-top: 7rem;
+  height: 5.5rem;
+  width: 100%;
+  background-color: black;
 }
 
 .footer-pag img {
-    text-decoration: none;
-    height: 6rem;
-    width: 6rem;
-    padding-top: 10px;
-    filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
+  text-decoration: none;
+  height: 4.5rem;
+  width: 4.5rem;
+  padding-top: 10px;
+  filter: drop-shadow(2px 2px 10px rgb(146, 13, 13));
 }
 
-.image-animation{    
-    display: flex;
-    padding-bottom: 0rem;
-    position: relative;
-    animation: slide 20s infinite; /* Animação infinita de 5 segundos */
+.image-animation {
+  display: flex;
+  padding-bottom: 0rem;
+  position: relative;
+  animation: slide 20s infinite; /* Animação infinita de 5 segundos */
 }
 
-.xenomorph{
-    display: flex;
-    width: 95%;
+.xenomorph {
+  display: flex;
+  width: 95%;
 }
 
 @keyframes slide {
+  0% {
+    left: 0;
+    transform: scaleX(-1);
+  }
+  50% {
+    left: 95%;
+    transform: scaleX(-1);
+  }
+  51% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    left: 0;
+    transform: scaleX(1);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #bg {
+    width: 60rem;
+  }
+
+  .contato {
+    width: 50rem;
+    height: fit-content;
+  }
+
+  .text-form {
+    font-size: 15px;
+  }
+
+  .inputBox {
+    width: 100%;
+  }
+
+  .inputUser {
+    font-size: 14px;
+  }
+
+  .labelInput {
+    font-size: 14px;
+  }
+
+  .inputUser:focus ~ .labelInput,
+  .inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 14px;
+    color: rgb(160, 40, 40);
+  }
+
+  .form-control-mensage-container {
+    margin-top: 20px;
+  }
+
+  .contato form textarea {
+    width: 14rem;
+  }
+
+  #message {
+    background-color: rgba(231, 227, 227, 0.295);
+    font-size: 15px;
+  }
+
+  .form-label-mensage {
+    font-size: 14px;
+  }
+
+  textarea::placeholder {
+    font-size: 14px;
+  }
+
+  #submit {
+    width: 10rem;
+    height: 3rem;
+  }
+
+  .text-form-bottom {
+    font-size: 12px;
+  }
+
+  .footer-pag {
+    padding: 0;
+  }
+
+  @keyframes slide {
     0% {
-        left: 0;
-        transform: scaleX(-1);
+      left: 0;
+      transform: scaleX(-1);
     }
     50% {
-        left: 95%;
-        transform: scaleX(-1);
+      left: 65%;
+      transform: scaleX(-1);
     }
-    51%{
-        transform: scaleX(1);
+    51% {
+      transform: scaleX(1);
     }
 
     100% {
-        left: 0;
-        transform: scaleX(1);
+      left: 0;
+      transform: scaleX(1);
     }
+  }
 }
 
-@media only screen and (max-width: 1000px) {
-    body {
-    background-size: 100% 6%;
+@media (min-width: 601px) and (max-width: 1400px) {
+    #bg {
+    width: 80rem;
+  }
+
+  .contato {
+    width: 50rem;
+    height: fit-content;
+    margin-bottom: 40px;
+  }
+
+  .text-form {
+    font-size: 22px;
+  }
+
+  .inputBox {
+    width: 100%;
+  }
+
+  .inputUser {
+    font-size: 19px;
+  }
+
+  .labelInput {
+    font-size: 19px;
+  }
+
+  .inputUser:focus ~ .labelInput,
+  .inputUser:valid ~ .labelInput {
+    top: -22px;
+    font-size: 19px;
+  }
+
+  .form-control-mensage-container {
+    margin-top: 20px;
+  }
+
+  .contato form textarea {
+    width: 40rem;
+  }
+
+  #message {
+    font-size: 19px;
+  }
+
+  .form-label-mensage {
+    font-size: 19px;
+  }
+
+  textarea::placeholder {
+    font-size: 19px;
+  }
+
+  #submit {
+    width: 20rem;
+  }
+
+  .text-form-bottom {
+    font-size: 15px;
+  }
+
+  .footer-pag {
+    height: 100%;
+  }
+
+  @keyframes slide {
+    0% {
+      left: 0;
+      transform: scaleX(-1);
+    }
+    50% {
+      left: 85%;
+      transform: scaleX(-1);
+    }
+    51% {
+      transform: scaleX(1);
     }
 
-    .contato{
-        width: 100%;
-        height: 80vh;
+    100% {
+      left: 0;
+      transform: scaleX(1);
     }
-
-    .contato h1{
-        font-size: 2rem;
-    }
-
-    .top-pag {
-        height: 10rem;
-    }
-
-    .top-pag-logo {
-        height: 55px;
-        margin-left: 20px;
-    }
-
-    .main-pag {
-        display: flex;
-        flex-direction: column;
-        margin: 1rem;
-        gap: 2rem;
-    }
-
-    .main-pag-left{
-        width: 100%;
-    }
-
-    .main-pag-left-bottom {
-        display: grid;
-        background-color: rgba(0, 0, 0, 0.911);
-        box-shadow: rgba(255, 0, 0, 0.9) 0px 0px 20px;
-        height: fit-content;
-        border-radius: 5px;
-        gap: 2rem;
-    }
-    
-    .main-pag-left-bottom h2 {
-        font-size: 1.1rem;
-    }
-
-    .main-pag-right {
-        width: 100%;
-    }
-
-    .main-pag-right h3 {
-        font-size: 1.1rem;
-
-    }
-
-    .main-pag-right p {
-        font-size: 14px;
-    }
-    
-    .main-pag-foot-animation{
-        top: 12px;
-    }
-
-    .footer-pag {
-        height: 5rem;
-        padding: 10px 0 0 10px;
-        background-size: 50%;
-    }
-
-    .footer-pag img {
-        height: 60px;
-        padding: 0;
-    }
+  }
 }

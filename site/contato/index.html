@@ -19,29 +19,29 @@
         </header>
         <main class="main-pag">
             <div class="contato">
-                <form action="submit" class="p-5 bg-dark-subtle rounded d-flex flex-column justify-content-center align-items-center">
-                    <b class="mb-3">Entre em contato conosco</b>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nome:</label>
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Digite seu nome">
+                <form action="submit" class="form-central p-5 rounded d-flex flex-column justify-content-center align-items-center">
+                    <h4 class="text-form mb-3">Entre em contato conosco</h4>
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome completo</label>
                     </div>
-                    
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email:</label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu email">
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="email" name="email" id="email" class="inputUser" required>
+                        <label for="email" class="labelInput">Email</label>
                     </div>
         
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Mensagem:</label>
-                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Digite sua mensagem"></textarea>
+                    <div class="form-control-mensage-container mb-3">
+                        <label for="message" class="form-label-mensage">Mensagem:</label>
+                        <textarea id="message" name="message" class="form-control-mensage" rows="4" placeholder="Digite sua mensagem"></textarea>
                     </div>
         
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-dark">Enviar</button>
+                        <button type="submit" id="submit" class="btn btn-dark">Enviar</button>
                     </div>
         
                     
-                    <div class="mt-4">
+                    <div class="text-form-bottom mt-4">
                         <p><strong>Telefone:</strong> (11) 99999-9999</p>
                         <p><strong>Email:</strong> contato@fridaythe13th.com</p>
                         <p><strong>Endereço:</strong> Rua do Medo, 666</p>
@@ -51,7 +51,7 @@
         </main>
         <footer class="footer-pag">
             <div>
-                <img id:=friday13logogif src="/site/assets/FridayThe13th.gif" alt="gif do logo do friday 13th com sangue pingando">                
+                <img id:=friday13logogif src="/site/assets/logo-sem-fundo.png" alt="gif do logo do friday 13th com sangue pingando">                
             </div>
             <div class="xenomorph">
                 <img src="/site/assets/xenomorphwalk.gif" alt="" class="image-animation">
