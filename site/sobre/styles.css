@@ -41,7 +41,7 @@ body {
 
 .top-pag-logo:hover {
     transform: scale(1.1); /* Aumenta a imagem para 110% do tamanho original */
-  }
+}
 
 /* .animation{
     display: flex;
